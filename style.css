@@ -573,3 +573,94 @@ footer {
     text-align:center;
 
 }
+
+
+/* =====================
+   全体文字設定
+===================== */
+
+body {
+    color: black;
+}
+
+
+
+/* =====================
+   ナビゲーション
+===================== */
+
+/* 横幅不足で崩れないよう調整 */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+
+nav a {
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+
+
+/* =====================
+   カード一覧
+===================== */
+
+#card-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+/* =====================
+   カード表示
+===================== */
+
+.card {
+
+    background: rgba(255,255,255,0.85);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* =====================
+   画面幅対応
+===================== */
+
+
+@media(max-width:900px){
+
+    #card-list {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:500px){
+
+    #card-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
