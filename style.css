@@ -496,7 +496,45 @@ section h2 {
 
 }
 
+/* 漫画ページ */
 
+.manga-box {
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+    padding:25px;
+
+    background:rgba(255,255,255,0.9);
+
+    border-radius:15px;
+
+}
+
+
+.manga-list img {
+
+    display:block;
+
+    width:100%;
+
+    max-width:800px;
+
+    margin:30px auto;
+
+}
+
+
+.coming {
+
+    text-align:center;
+
+    padding:40px;
+
+    font-size:24px;
+
+}
 
 
 /* フッター */
