@@ -552,3 +552,24 @@ footer {
 
 
 }
+
+
+
+
+/* カード申請ページ */
+
+.apply-box {
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    background:rgba(255,255,255,0.9);
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
