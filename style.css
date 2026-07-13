@@ -328,3 +328,189 @@ text-align:center;
 padding:30px;
 
 }
+
+
+/* =====================
+   トップページ
+===================== */
+
+
+/* 背景 */
+
+body {
+
+    margin:0;
+
+    min-height:100vh;
+
+    background-image:url("images/background.PNG");
+
+    background-size:cover;
+
+    background-attachment:fixed;
+
+    background-position:center;
+
+}
+
+
+
+/* ヘッダー */
+
+.top-header {
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+/* バナー */
+
+.banner {
+
+    width:80%;
+
+    max-width:900px;
+
+}
+
+
+
+/* メニュー */
+
+nav {
+
+    margin-top:20px;
+
+}
+
+
+
+nav a {
+
+    display:inline-block;
+
+    margin:5px;
+
+    padding:10px 20px;
+
+    background:rgba(255,255,255,0.9);
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+}
+
+
+
+nav a:hover {
+
+    opacity:0.7;
+
+}
+
+
+
+
+/* 各説明欄 */
+
+.intro,
+.how-to,
+.manga-link,
+.apply-link,
+.news {
+
+
+    max-width:900px;
+
+
+    margin:40px auto;
+
+
+    padding:25px;
+
+
+    background:rgba(255,255,255,0.9);
+
+
+    border-radius:15px;
+
+
+}
+
+
+
+/* 見出し */
+
+section h2 {
+
+    text-align:center;
+
+    font-size:28px;
+
+}
+
+
+
+/* ボタン */
+
+.button {
+
+
+    display:inline-block;
+
+
+    padding:12px 30px;
+
+
+    margin-top:15px;
+
+
+    background:#333;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+.button:hover {
+
+
+    opacity:0.8;
+
+
+}
+
+
+
+
+/* フッター */
+
+footer {
+
+
+    text-align:center;
+
+
+    padding:20px;
+
+
+    background:rgba(255,255,255,0.8);
+
+
+}
