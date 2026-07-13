@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+    "Noto Sans JP",
+    sans-serif;
+
+    background-image:
+    url("images/background.png");
+
+    background-size:
+    cover;
+
+    background-position:
+    center;
+
+    background-attachment:
+    fixed;
+
+}
+
+
+
+
+header {
+
+    width: 100%;
+
+}
+
+
+.banner {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    background: rgba(0,0,0,0.75);
+
+}
+
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+nav a:hover {
+
+    background: rgba(255,255,255,0.2);
+
+}
+
+
+
+
+
+main {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+}
+
+
+
+
+section {
+
+    background:
+    rgba(0,0,0,0.65);
+
+    color: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+}
+
+
+
+
+h1,
+h2 {
+
+    border-bottom:
+    2px solid white;
+
+    padding-bottom: 10px;
+
+}
+
+
+
+
+.features {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+
+.features div {
+
+    flex: 1;
+
+    background:
+    rgba(255,255,255,0.1);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+
+.links a {
+
+    color: white;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+}
+
+
+
+
+.links a:hover {
+
+    background:
+    rgba(255,255,255,0.3);
+
+}
+
+
+
+
+
+footer {
+
+    text-align:center;
+
+    color:white;
+
+    padding:30px;
+
+}
