@@ -1,192 +1,231 @@
 * {
-box-sizing:border-box;
+    box-sizing: border-box;
 }
-
 
 body {
 
-margin:0;
+    margin: 0;
+    min-height: 100vh;
 
-font-family:
-"Noto Sans JP",
-sans-serif;
+    font-family:
+    "Noto Sans JP",
+    sans-serif;
 
-background-image:
-url("images/background.PNG");
+    color: black;
 
-background-size:
-cover;
+    background-image:
+    url("images/background.PNG");
 
-background-position:
-center;
+    background-size:
+    cover;
 
-background-attachment:
-fixed;
+    background-position:
+    center;
+
+    background-attachment:
+    fixed;
 
 }
 
-
-
+/* バナー */
 
 .banner {
 
-width:100%;
-
-display:block;
+    width: 80%;
+    max-width: 900px;
+    display: block;
 
 }
 
+/* ヘッダー */
 
+.top-header {
 
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* ナビ */
 
 nav {
 
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-padding:15px;
-
-background:rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
 
 }
-
-
 
 nav a {
 
-color:white;
+    display: block;
 
-text-decoration:none;
+    padding: 10px 20px;
 
-padding:10px 20px;
+    background:
+    rgba(255,255,255,0.9);
 
-border-radius:10px;
+    color: black;
 
-}
-
-
-
-nav a:hover {
-
-background:rgba(255,255,255,0.2);
-
-}
-
-
-
-
-main {
-
-width:90%;
-
-max-width:1200px;
-
-margin:30px auto;
-
-}
-
-
-
-section {
-
-background:
-rgba(0,0,0,0.65);
-
-color:white;
-
-padding:25px;
-
-margin-bottom:30px;
-
-border-radius:15px;
-
-}
-
-
-
-.features {
-
-display:flex;
-
-gap:20px;
-
-}
-
-
-
-.features div {
-
-flex:1;
-
-background:
-rgba(255,255,255,0.1);
-
-padding:15px;
-
-border-radius:10px;
-
-}
-
-
-
-.links {
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:20px;
-
-}
-
-
-
-.links a {
-
-background:
-rgba(255,255,255,0.15);
-
-color:white;
-
-padding:15px 25px;
-
-border-radius:10px;
-
-text-decoration:none;
-
-}
-
-
-
-.links a:hover {
-
-background:
-rgba(255,255,255,0.3);
-
-}
-
-/* =====================
-   カード検索ページ
-===================== */
-
-
-.search-area {
-
-    background: rgba(255,255,255,0.9);
-
-    padding: 20px;
-
-    margin: 20px auto;
-
-    max-width: 900px;
+    text-decoration: none;
 
     border-radius: 10px;
 
 }
 
+nav a:hover {
+
+    opacity: 0.7;
+
+}
+
+main {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+
+}
+
+/* =====================
+   共通セクション
+===================== */
+
+section {
+
+    background: rgba(255,255,255,0.9);
+    color: black;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+}
+
+/* =====================
+   トップページ
+===================== */
+
+.features {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.features div {
+
+    flex: 1;
+
+    background: rgba(0,0,0,0.05);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+}
+
+.links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.links a {
+
+    background: rgba(0,0,0,0.08);
+
+    color: black;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+}
+
+.links a:hover {
+
+    background: rgba(0,0,0,0.15);
+
+}
+
+.intro,
+.how-to,
+.manga-link,
+.apply-link,
+.news {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 15px;
+
+}
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 28px;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    margin-top: 15px;
+
+    background: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+}
+
+.button:hover {
+
+    opacity: 0.8;
+
+}
+
+/* =====================
+   カード検索
+===================== */
+
+.search-area {
+
+    background: rgba(255,255,255,0.9);
+
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
 
 .search-area input,
 .search-area select {
@@ -199,7 +238,6 @@ rgba(255,255,255,0.3);
 
 }
 
-
 .search-area button {
 
     padding: 10px 20px;
@@ -209,401 +247,6 @@ rgba(255,255,255,0.3);
     cursor: pointer;
 
 }
-
-
-
-/* =====================
-   カード一覧
-===================== */
-
-
-#card-list {
-
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-
-    gap: 20px;
-
-
-    padding: 20px;
-
-
-}
-
-
-
-/* カード */
-
-.card {
-
-
-    background:
-    rgba(255,255,255,0.95);
-
-
-    border-radius: 15px;
-
-
-    padding: 15px;
-
-
-    box-shadow:
-    0 4px 10px rgba(0,0,0,0.3);
-
-
-    transition:0.2s;
-
-
-}
-
-
-
-.card:hover {
-
-
-    transform:translateY(-5px);
-
-
-}
-
-
-
-/* カード画像 */
-
-
-.card img {
-
-
-    width:100%;
-
-
-    max-height:350px;
-
-
-    object-fit:contain;
-
-
-}
-
-
-
-/* カード名 */
-
-
-.card h2 {
-
-
-    text-align:center;
-
-
-    font-size:22px;
-
-
-}
-
-
-
-/* 効果欄 */
-
-
-.card p {
-
-
-    line-height:1.5;
-
-
-}
-
-
-footer {
-
-color:white;
-
-text-align:center;
-
-padding:30px;
-
-}
-
-
-/* =====================
-   トップページ
-===================== */
-
-
-/* 背景 */
-
-body {
-
-    margin:0;
-
-    min-height:100vh;
-
-    background-image:url("images/background.PNG");
-
-    background-size:cover;
-
-    background-attachment:fixed;
-
-    background-position:center;
-
-}
-
-
-
-/* ヘッダー */
-
-.top-header {
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-
-
-/* バナー */
-
-.banner {
-
-    width:80%;
-
-    max-width:900px;
-
-}
-
-
-
-/* メニュー */
-
-nav {
-
-    margin-top:20px;
-
-}
-
-
-
-nav a {
-
-    display:inline-block;
-
-    margin:5px;
-
-    padding:10px 20px;
-
-    background:rgba(255,255,255,0.9);
-
-    color:black;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-}
-
-
-
-nav a:hover {
-
-    opacity:0.7;
-
-}
-
-
-
-
-/* 各説明欄 */
-
-.intro,
-.how-to,
-.manga-link,
-.apply-link,
-.news {
-
-
-    max-width:900px;
-
-
-    margin:40px auto;
-
-
-    padding:25px;
-
-
-    background:rgba(255,255,255,0.9);
-
-
-    border-radius:15px;
-
-
-}
-
-
-
-/* 見出し */
-
-section h2 {
-
-    text-align:center;
-
-    font-size:28px;
-
-}
-
-
-
-/* ボタン */
-
-.button {
-
-
-    display:inline-block;
-
-
-    padding:12px 30px;
-
-
-    margin-top:15px;
-
-
-    background:#333;
-
-
-    color:white;
-
-
-    text-decoration:none;
-
-
-    border-radius:10px;
-
-
-}
-
-
-
-.button:hover {
-
-
-    opacity:0.8;
-
-
-}
-
-/* 漫画ページ */
-
-.manga-box {
-
-    max-width:1000px;
-
-    margin:40px auto;
-
-    padding:25px;
-
-    background:rgba(255,255,255,0.9);
-
-    border-radius:15px;
-
-}
-
-
-.manga-list img {
-
-    display:block;
-
-    width:100%;
-
-    max-width:800px;
-
-    margin:30px auto;
-
-}
-
-
-.coming {
-
-    text-align:center;
-
-    padding:40px;
-
-    font-size:24px;
-
-}
-
-
-/* フッター */
-
-footer {
-
-
-    text-align:center;
-
-
-    padding:20px;
-
-
-    background:rgba(255,255,255,0.8);
-
-
-}
-
-
-
-
-/* カード申請ページ */
-
-.apply-box {
-
-    max-width:900px;
-
-    margin:40px auto;
-
-    padding:30px;
-
-    background:rgba(255,255,255,0.9);
-
-    border-radius:15px;
-
-    text-align:center;
-
-}
-
-
-/* =====================
-   全体文字設定
-===================== */
-
-body {
-    color: black;
-}
-
-
-
-/* =====================
-   ナビゲーション
-===================== */
-
-/* 横幅不足で崩れないよう調整 */
-
-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-nav a {
-    display: block;
-    padding: 10px;
-}
-
-
 
 /* =====================
    カード一覧
@@ -617,34 +260,166 @@ nav a {
 
     gap: 20px;
 
+    padding: 20px;
+
 }
-
-
-
-/* =====================
-   カード表示
-===================== */
 
 .card {
 
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.9);
 
-    padding: 15px;
+    border-radius: 15px;
 
-    border-radius: 10px;
+    padding: 10px;
+
+    text-align: center;
+
+    transition: 0.2s;
 
 }
 
+.card:hover {
 
+    transform: translateY(-5px);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: contain;
+
+}
+
+.card h2 {
+
+    font-size: 18px;
+
+    margin: 10px 0 0;
+
+}
+
+.card p {
+
+    display: none;
+
+}
 
 /* =====================
-   画面幅対応
+   漫画ページ
 ===================== */
 
-nav {
-    flex-direction:column;
+.manga-box {
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 15px;
+
 }
 
+.manga-list img {
 
+    display: block;
 
+    width: 100%;
 
+    max-width: 800px;
+
+    margin: 30px auto;
+
+}
+
+.coming {
+
+    text-align: center;
+
+    padding: 40px;
+
+    font-size: 24px;
+
+}
+
+/* =====================
+   カード申請
+===================== */
+
+.apply-box {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 15px;
+
+    text-align: center;
+
+}
+
+/* =====================
+   フッター
+===================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: black;
+
+    background: rgba(255,255,255,0.8);
+
+}
+
+/* =====================
+   スマホ対応
+===================== */
+
+@media (max-width: 1000px) {
+
+    #card-list {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #card-list {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #card-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .features {
+
+        flex-direction: column;
+
+    }
+
+}
