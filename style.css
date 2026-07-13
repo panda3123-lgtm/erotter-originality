@@ -593,15 +593,14 @@ body {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 
-
 nav a {
-    padding: 5px 10px;
-    white-space: nowrap;
+    display: block;
+    padding: 10px;
 }
 
 
