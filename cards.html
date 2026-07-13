@@ -14,30 +14,95 @@
 
 <body>
 
-
 <header>
-
-<h1>
-カード一覧
-</h1>
-
+<h1>カード一覧</h1>
 </header>
 
 
-
 <nav>
-
 <a href="index.html">ホーム</a>
 <a href="rule.html">ルール</a>
 <a href="cards.html">カード一覧</a>
 <a href="manga.html">漫画</a>
 <a href="apply.html">カード申請</a>
-
 </nav>
 
 
-
 <main>
+
+
+<section class="search-area">
+
+<h2>カード検索</h2>
+
+
+<input 
+id="search-name"
+type="text"
+placeholder="カード名・効果を検索">
+
+
+<select id="search-type">
+
+<option value="">種類</option>
+<option value="モンスター">モンスター</option>
+<option value="魔法">魔法</option>
+<option value="トラップ">トラップ</option>
+
+</select>
+
+
+
+<select id="search-color">
+
+<option value="">色</option>
+<option value="白">白</option>
+<option value="黒">黒</option>
+<option value="青">青</option>
+<option value="緑">緑</option>
+<option value="黄色">黄色</option>
+<option value="オレンジ">オレンジ</option>
+<option value="赤">赤</option>
+<option value="紫">紫</option>
+<option value="ピンク">ピンク</option>
+<option value="グレー">グレー</option>
+<option value="水色">水色</option>
+<option value="灰色">灰色</option>
+
+</select>
+
+
+<select id="search-cost">
+
+<option value="">コスト</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+</select>
+
+
+
+<button onclick="searchCards()">
+検索
+</button>
+
+
+<button onclick="resetSearch()">
+リセット
+</button>
+
+
+</section>
+
+
 
 <section>
 
